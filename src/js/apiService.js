@@ -11,7 +11,8 @@ export default {
      .then(({hits}) => {
         this.incrementPage()
         return hits;
-      })
+     })
+    .catch(error => console.log(error))
   },
   get query() {
     return this.searchQuery
